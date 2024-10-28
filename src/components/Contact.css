@@ -1,0 +1,72 @@
+.contact-form-container {
+  padding: 20px;
+  line-height: 1.4;
+  border-radius: 10px;
+  width: 317px;
+  margin: 107px auto;
+  box-shadow: 0 0 19px rgba(6, 0, 0, 1.1);
+  font-family: Arial, sans-serif;
+}
+
+.contact-form-container h2 {
+  text-align: center;
+  color: #333;
+}
+
+.contact-form-container p {
+  text-align: center;
+  color: #666;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.name-fields {
+  display: flex;
+  gap: 10px;
+}
+
+.name-fields input {
+  flex: 1;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.example-email {
+  font-size: 12px;
+  color: #999;
+}
+
+.send-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #000080;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.send-button:hover {
+  background-color: #000060;
+}
+
+.call-us {
+  text-align: center;
+  color: #666;
+  margin-top: 10px;
+}

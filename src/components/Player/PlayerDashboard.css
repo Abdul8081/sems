@@ -1,0 +1,44 @@
+.player-dashboard {
+  background-color: #0a0e27; /* Dark background color */
+  min-height: 100vh; /* Ensure full height to center content vertically */
+  display: flex; /* Use flexbox for centering */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
+  padding: 20px; /* Padding around the content */
+}
+
+.dashboard-content {
+  margin-bottom: 20px; /* Space below the content */
+}
+
+.player-info-box {
+  background-color: #ffffff; /* White background for the box */
+  border: 1px solid #ddd; /* Light gray border */
+  border-radius: 8px; /* Rounded corners */
+  padding: 20px; /* Spacing inside the box */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  max-width: 600px; /* Set a max width for the box */
+  width: 100%; /* Make box responsive */
+  margin: 20px auto; /* Center the box horizontally */
+}
+
+.player-info-box h2 {
+  margin-bottom: 15px; /* Space below the heading */
+  color: #333; /* Darker color for the heading */
+  text-align: center; /* Center the heading text */
+}
+
+.player-card {
+  border: 1px solid #ccc; /* Light border for each player */
+  border-radius: 5px; /* Rounded corners */
+  padding: 10px; /* Spacing inside each player card */
+  margin: 10px 0; /* Space between player cards */
+  background-color: #f1f1f1; /* Slightly darker background for cards */
+}
+
+.player-card p {
+  margin: 5px 0; /* Space between paragraphs in player card */
+  color: #555; /* Slightly lighter text color */
+  text-align: left; /* Align text to the left */
+}

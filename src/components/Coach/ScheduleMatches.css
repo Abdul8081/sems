@@ -1,0 +1,56 @@
+/* src/components/ScheduleMatches.css */
+
+.shedule_match_class {
+    padding: 20px;
+    background-color: #F0FFFF; /* Background color to match the application */
+    border-radius: 8px;
+    width: 100%;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 auto; /* Center the component */
+  }
+  
+  .shedule_match {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333; /* Dark text for the heading */
+  }
+  
+  .select_input {
+    display: flex;
+    flex-direction: column; /* Align inputs vertically */
+    gap: 10px; /* Space between input fields */
+  }
+  
+  .select_input select,
+  .select_input input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box; /* Include padding and border in width */
+    background-color: white; /* Ensure background is white */
+    font-size: 16px; /* Consistent font size with inputs */
+  }
+  
+  .shedule_button button {
+    width: 100%;
+    padding: 10px;
+    background-color: #1f7ea1; /* Button color matching the theme */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px; /* Space above the button */
+  }
+  
+  .shedule_button button:hover {
+    background-color: #155d8d; /* Darker shade for hover effect */
+  }
+  
+  .error-message {
+    color: red;
+    text-align: center;
+    margin-top: 10px; /* Space above the error message */
+  }
+  

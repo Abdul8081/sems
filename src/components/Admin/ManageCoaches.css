@@ -1,0 +1,53 @@
+/* src/components/ManageCoaches.css */
+
+.manage-coaches {
+  padding: 20px;
+  background-color: #F0FFFF; /* Set background color to match the application */
+  border-radius: 8px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.manage-coaches h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333; /* Dark text for the heading */
+}
+
+.manage-coaches input,
+.manage-coaches select {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box; /* Include padding and border in width */
+}
+
+.manage-coaches button {
+  width: 100%;
+  padding: 10px;
+  background-color: #1f7ea1; /* Button color matching the theme */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.manage-coaches button:hover {
+  background-color: #155d8d; /* Darker shade for hover effect */
+}
+
+.coach-list {
+  margin-top: 20px;
+  padding: 0; /* Remove default padding */
+  list-style-type: none; /* Remove bullets */
+}
+
+.coach-list li {
+  padding: 10px;
+  background-color: #ffffff; /* White background for coach list items */
+  margin-bottom: 10px;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow for list items */
+}

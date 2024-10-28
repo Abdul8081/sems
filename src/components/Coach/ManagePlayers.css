@@ -1,0 +1,59 @@
+/* src/components/Admin/ManagePlayers.css */
+
+.manage-players {
+  width: 100%;
+  padding: 20px;
+  background-color: #F0FFFF; /* Background color to match the application */
+  border-radius: 8px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.manage-players h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333; /* Dark text for the heading */
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column; /* Align inputs vertically */
+  gap: 10px; /* Space between input fields */
+}
+
+.manage-players input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box; /* Include padding and border in width */
+}
+
+.manage-players button {
+  width: 100%;
+  padding: 10px;
+  background-color: #1f7ea1; /* Button color matching the theme */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px; /* Space above the button */
+}
+
+.manage-players button:hover {
+  background-color: #155d8d; /* Darker shade for hover effect */
+}
+
+.player-list {
+  margin-top: 20px;
+  padding: 0; /* Remove default padding */
+  list-style-type: none; /* Remove bullets */
+}
+
+.player-list li {
+  padding: 10px;
+  background-color: #ffffff; /* White background for player list items */
+  margin-bottom: 10px;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow for list items */
+}

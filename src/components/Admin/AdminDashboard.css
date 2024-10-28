@@ -1,0 +1,108 @@
+/* src/components/AdminDashboard.css */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden; /* Prevent horizontal overflow */
+  font-family: 'Arial', sans-serif;
+  overflow-y: scroll;
+}
+
+.admin-dashboard {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #1f7ea1;
+  padding-top: 80px; /* Make room for the fixed navbar */
+  box-sizing: border-box;
+  color: #ffffff;
+}
+
+.dashboard-content-wrapper {
+  flex-grow: 1;
+  display: flex;
+  margin: 6px;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 40px 20px;
+}
+
+.dashboard-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 15px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+p {
+  font-size: 1.3em;
+  color: #d0e0e3;
+}
+
+.dashboard-content {
+  display: flex;
+  flex-direction: row; /* Keep components side by side */
+  gap: 20px; /* Adjust space between components */
+  width: 100%;
+  max-width: 1200px; /* Maintain max width */
+  padding: 0 20px;
+}
+
+.dashboard-content > div {
+  background-color: #f0ffff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  flex: 1; /* Make each component grow to fill space */
+  min-width: 250px; /* Minimum width for better responsiveness */
+}
+
+.dashboard-content > div:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .dashboard-content-wrapper {
+    padding: 20px 10px;
+  }
+  
+  h1 {
+    font-size: 2em;
+  }
+
+  p {
+    font-size: 1.1em;
+  }
+
+  .dashboard-content {
+    flex-direction: column; /* Stack components on mobile */
+    gap: 15px;
+  }
+}
+
+/* Tablet responsiveness */
+@media (min-width: 769px) and (max-width: 1024px) {
+  h1 {
+    font-size: 2.2em;
+  }
+
+  p {
+    font-size: 1.2em;
+  }
+
+  .dashboard-content {
+    flex-direction: row; /* Maintain side by side layout */
+  }
+}

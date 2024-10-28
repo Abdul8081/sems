@@ -1,0 +1,72 @@
+/* src/components/ManageTeams.css */
+
+.manage-teams {
+  padding: 20px;
+  background-color: #F5F5F5; /* Soft background for the manage teams section */
+  border-radius: 8px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.manage-teams h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333; /* Dark heading text */
+}
+
+.manage-teams .input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Adds space between input fields */
+}
+
+.manage-teams input {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box; /* Ensures padding and borders are included in element width */
+}
+
+.manage-teams button {
+  width: 100%;
+  padding: 10px;
+  background-color: #1f7ea1; /* Same theme as ManageCoaches button */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.manage-teams button:hover {
+  background-color: #155d8d; /* Darker blue for hover */
+}
+
+.team-list {
+  margin-top: 20px;
+  padding: 0;
+  list-style-type: none; /* No bullets for the list */
+}
+
+.team-list li {
+  padding: 10px;
+  background-color: #ffffff; /* White background for team items */
+  margin-bottom: 10px;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Light shadow */
+}
+
+.team-list li span {
+  display: block;
+  margin-bottom: 5px;
+  color: #333; /* Dark color for text */
+}
+
+.team-name,
+.team-game,
+.team-location,
+.team-coached_by {
+  font-weight: 500; /* Slightly bolder text for team details */
+}
+

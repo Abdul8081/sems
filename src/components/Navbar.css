@@ -1,0 +1,94 @@
+/* src/components/Navbar.css */
+
+.navbar {
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between; /* Space between brand and login */
+    align-items: center;
+    position: fixed;
+    background-color: rgba(240, 255, 255, 0.95); /* Slightly transparent for a sleek look */
+    padding: 15px 40px; /* Adjusted padding for balance */
+    width: 100vw;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Softer shadow for a clean look */
+    z-index: 1000; /* Ensure it stays on top */
+    backdrop-filter: blur(10px); /* Slight blur for a modern UI effect */
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px; /* Space between menu items */
+}
+
+.navbar li {
+    margin: 0;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600; /* Slightly bolder text for visibility */
+    transition: color 0.3s, transform 0.3s ease; /* Smooth hover transition */
+}
+
+.navbar a:hover {
+    color: #1f7ea1; /* Change color on hover */
+    transform: scale(1.05);
+     /* Slight hover scaling effect */
+} 
+
+.start {
+    font-size: 1.6em; /*Slightly larger font size for branding */
+    font-weight: 700;
+    color: #333;
+}
+
+.end {
+    background-color: #1f7ea1; /* Button background color */
+    color: white;
+    border: none;
+    padding: 10px 25px; /* Added padding for balance */
+    border-radius: 8px; /* Softer rounded corners */
+    cursor: pointer;
+    font-weight: bold;
+    display: flex;
+    align-items: center; /* Center icon and text */
+    gap: 8px; /* Space between text and icon */
+    transition: background-color 0.3s, transform 0.3s ease;
+}
+
+.end:hover {
+    background-color: #145f74; /* Darker shade on hover */
+    transform: translateY(-2px); /* Subtle lift effect on hover */
+}
+
+.icon {
+    font-size: 1.4em; /* Slightly larger icon */
+}
+.navbar_end{
+    gap: 20px;
+    display: flex;
+
+}
+
+/* Responsive behavior */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 10px 20px;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .end {
+        margin-top: 15px;
+        padding: 10px 20px;
+    }
+}
